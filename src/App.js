@@ -20,8 +20,8 @@ function App() {
     )
       .then(response => response.json())
       .then(data => setContent(data.hits));
-    setLoading(false);
     setFood("");
+    setLoading(false);
   };
 
   const getFood = e => {
@@ -30,7 +30,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="wrapper">
       <form onSubmit={getFood}>
         <input
           type="text"
