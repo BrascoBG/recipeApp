@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  background: linear-gradient(to left, #5c258d, #4389a2);
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+form input {
+  height: 40px;
+  width: 40%;
+  font-size: large;
+  padding: 15px;
+}

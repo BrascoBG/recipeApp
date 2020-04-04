@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.recipe {
+  width: 400px;
+  background-color: rgba(240, 240, 240, 0.3);
+  margin: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 4px #383d46;
+}
+.recipe ul {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.recipe h1 {
+  color: #e4cac0;
+  margin-bottom: 15px;
+  font-family: Lobster;
+}
+.recipe h3 {
+  color: #e6e86b;
+  margin-bottom: 10px;
+  font-family: Lobster;
+  display: flex;
+  justify-content: flex-end;
+}
+.recipe li {
+  color: #325492;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.img {
+  margin-left: 30px;
+  margin-top: 10px;
+}

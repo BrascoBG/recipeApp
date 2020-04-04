@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Recipe from "./components/recipe";
+import "./App.css";
 
 function App() {
   const API_ID = "7264b995";
@@ -33,22 +34,25 @@ function App() {
     <div className="wrapper">
       <form onSubmit={getFood}>
         <input
+          placeholder="Type any kind of food or a drink..."
           type="text"
           value={food}
           onChange={e => setFood(e.target.value)}
         />
         <button type="submit">Search</button>
       </form>
-      {content.map(items => (
-        <Recipe
-          key={items.recipe.label}
-          title={items.recipe.label}
-          calories={items.recipe.calories}
-          ingredients={items.recipe.ingredientLines}
-          image={items.recipe.image}
-          loading={loading}
-        />
-      ))}
+      <div className="flex">
+        {content.map(items => (
+          <Recipe
+            key={items.recipe.label}
+            title={items.recipe.label}
+            calories={items.recipe.calories}
+            ingredients={items.recipe.ingredientLines}
+            image={items.recipe.image}
+            loading={loading}
+          />
+        ))}
+      </div>
     </div>
   );
 }
