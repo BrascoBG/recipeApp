@@ -1,10 +1,13 @@
 # Recipe App with React Hooks
 
-Just search for any kind of food or a drink.
 It's fetching data from API
 Styled with Flexbox
 
-![Screenshot](link-to-image)
+Just search for any kind of drink
+![Screenshot](https://github.com/BrascoBG/recipeApp/blob/master/src/assets/recipe-drink.jpg?raw=true)
+
+Or food
+![Screenshot](https://github.com/BrascoBG/recipeApp/blob/master/src/assets/recipe-food.jpg?raw=true)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
