@@ -9,11 +9,11 @@ function Recipe({ title, calories, ingredients, image, loading }) {
         <h1>{loading ? "Loading..." : title}</h1>
         <h3>{loading ? "Loading..." : calories.toFixed(2)} Calories</h3>
         <ul>
-          {ingredients.map(item => (
+          {ingredients.map((item) => (
             <li>{item}</li>
           ))}
         </ul>
-        <img className={style.img} src={image} />
+        <img alt="recipe" className={style.img} src={image} />
       </div>
     </div>
   );

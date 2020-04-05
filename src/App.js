@@ -19,30 +19,39 @@ function App() {
     fetch(
       `https://api.edamam.com/search?q=${food}&app_id=${API_ID}&app_key=${API_KEY}`
     )
-      .then(response => response.json())
-      .then(data => setContent(data.hits));
+      .then((response) => response.json())
+      .then((data) => setContent(data.hits));
     setFood("");
     setLoading(false);
   };
 
-  const getFood = e => {
+  const getFood = (e) => {
     e.preventDefault();
     setSearch(food);
   };
 
   return (
     <div className="wrapper">
+      <h2 className="title">Search for any kind of food or a drink</h2>
       <form onSubmit={getFood}>
         <input
-          placeholder="Type any kind of food or a drink..."
+          placeholder="Type here..."
           type="text"
           value={food}
-          onChange={e => setFood(e.target.value)}
+          onChange={(e) => setFood(e.target.value)}
         />
         <button type="submit">Search</button>
+        <a
+          target="_blank"
+          href="https://github.com/BrascoBG/recipeApp"
+          className="code"
+          rel="noopener noreferrer"
+        >
+          Code Here
+        </a>
       </form>
       <div className="flex">
-        {content.map(items => (
+        {content.map((items) => (
           <Recipe
             key={items.recipe.label}
             title={items.recipe.label}
