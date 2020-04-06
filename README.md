@@ -1,6 +1,7 @@
 # Recipe App with React Hooks
 
 It's fetching data from API
+
 Styled with Flexbox
 
 Just search for any kind of drink
